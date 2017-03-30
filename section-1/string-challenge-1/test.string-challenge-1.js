@@ -3,7 +3,7 @@ describe('String Challenge ', function() {
   challenge('Implement this function that strips all punctuation from a string.', function() {
 
     var str = 'Yes, just the five. Husbands should be like Kleenex: soft, strong and disposable.';
-    var result = stripPuncutation(str);
+    var result = stripPunctuation(str);
 
     chai.assert.equal(result, 'Yes just the five Husbands should be like Kleenex soft strong and disposable');
 

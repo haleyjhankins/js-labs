@@ -4,10 +4,11 @@ describe('Conditionals are for making decisions.', function() {
 
   factoid('You can use them for one condition.', function() {
     var result;
-
+    console.log(result);
     if (result === undefined) {
       //uncomment the line below.
       result = 'stuff';
+      console.log(result);
     }
 
     chai.assert.equal(result, 'stuff');
@@ -61,10 +62,10 @@ describe('Conditionals are for making decisions.', function() {
 
     //uncomment the line of code that will be run.
     if (result === undefined) {
-      //result = 100;
+      result = 100;
     }
     else if (result === 1) {
-      //result += 1;
+      result += 1;
     }
 
     chai.assert.equal(result, 2);

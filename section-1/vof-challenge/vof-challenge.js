@@ -24,19 +24,25 @@ function combineStrings(a, b) {
 }
 
 function subtract(a, b) {
+  return a - b;
 }
 
 function multiply(a, b) {
+  return a * b;
 }
 
 function divide(a, b) {
+  return a/ b;
 }
 
 function remainder(a, b) {
+  return a % b;
 }
 
 function square(number) {
+  return number * number;
 }
 
 function cube(number) {
+  return number * number * number;
 }
