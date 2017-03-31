@@ -28,12 +28,25 @@ function returnSmaller(first, second) {
 
 }
 
-
-
-
-
-
-
-
 function tankDeterminer(animal, size) {
+  if (animal === 'turtle' && size === 'large') {
+    return 'turtle';
+  }
+
+  if (animal === 'clown fish' && size == 'small'){
+    return 'small saltwater';
+  }
+
+  else if (animal === 'clown fish' && size == 'large'){
+    return 'medium saltwater';
+  }
+
+  if (animal === 'guppy' && size === 'small'){
+    return 'small freshwater';
+  }
+
+  else if (animal ==='guppy' && size ==='large'){
+    return 'small freshwater';
+  }
+
 }
