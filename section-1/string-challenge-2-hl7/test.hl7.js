@@ -23,7 +23,7 @@ describe('HL7', function() {
       chai.assert.equal(birthMonth, 6);
     });
 
-    it ('can return the day of birth.') function (){
+    it ('can return the day of birth.', function (){
       var birthDay= PIDParser.birthDay(pid);
       chai.assert.equal(birthDay, 15);
     })
