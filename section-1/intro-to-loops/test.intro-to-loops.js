@@ -4,13 +4,13 @@ describe('You can use for loops', function() {
 
   it('to do something a certain number of times', function() {
 
-    var sum = 0;
+    var sum = 10;
     //Use a for loop to add 2 to this number 5 times.
     for (var i=0; i< 5; i++) {
       sum += 2
     }
 
-    chai.assert.equal(sum, 10);
+    chai.assert.equal(sum, 20);
   });
 
   it('with arrays to sum the values.', function() {
@@ -45,12 +45,11 @@ describe('You can use for loops', function() {
     var sumOfOdds = 0;
     for (var i=0; i <arrayOfNumbers.length; i++ ){
 
-
-
-      var value =arrayOfNumbers [i];
+      var value =arrayOfNumbers[i];
 
       if(value % 2 ===1){
         sumOfOdds+=value; //CHECK THIS!!!!
+        // sumOfOdds= sumOfOdds + value;s
       }
     }
 
@@ -61,6 +60,12 @@ describe('You can use for loops', function() {
     var arrayOfNumbers = [7, 12, 33, 4];
 
     var sumOfEvens = 0;
+
+    for(var i = 0; i < arrayOfNumbers.length; i++ ){
+      if (arrayOfNumbers[i] % 2 === 0){
+        sumOfEvens= sumOfEvens + arrayOfNumbers[i];
+      }
+    }
 
     chai.assert.equal(sumOfEvens, 16);
   });

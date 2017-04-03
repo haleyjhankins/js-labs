@@ -82,7 +82,7 @@ describe('An array', function() {
     var secondArray = [60, 61];
 
     //Use concat to combine the two arrays into one new array.
-    var combinedArray =firstArray.concat (secondArray, 4) ;
+    var combinedArray =firstArray.concat (secondArray) ;
 
 
     chai.assert.equal(combinedArray.length, 4);
