@@ -8,9 +8,9 @@ var PIDParser = {
 
   birthYear: function(data) {
     var pieces = data.split('|');
-    console.log(pieces);
+    //console.log(pieces);
     var date= pieces[7];
-    console.log(date);
+  //  console.log(date);
 
     return date.slice(0,4);
   },
@@ -33,12 +33,22 @@ var PIDParser = {
 var MSHParser = {
 
   type: function(data) {
+    var pieces =data.split('|');
+    console.log(pieces);
+
+    return pieces[8];
+
   },
 
   sendingApplication: function(data) {
+    var pieces = data.split('|');
+    return pieces [2];
+
   },
 
   sendingFacility: function(data) {
+    var pieces = data.split('|');
+    return pieces [3];
   }
 
 }
